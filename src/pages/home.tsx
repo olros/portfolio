@@ -19,13 +19,11 @@ export function Home() {
         Olaf Rosendahl
       </h1>
       <ul>
-        {/* <li>
-          <h3>Prosjekter:</h3>
-        </li> */}
         {projects.map((project) => (
           <li key={project.id}>
-            <Link style={{ textAlign: 'center' }} to={`/${project.id}`}>
-              <span>{project.title}</span><br/>
+            <Link style={{ textAlign: "center" }} to={`/${project.id}`}>
+              <span>{project.title}</span>
+              <br />
               <span className="when">{project.when}</span>
             </Link>
           </li>

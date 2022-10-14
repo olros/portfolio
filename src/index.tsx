@@ -9,7 +9,12 @@ const AppWithUI = () => (
   <StrictMode>
     <BrowserRouter>
       <App />
-      <Footer githubTitle="@olros" githubUrl="https://github.com/olros" linkedinTitle="LinkedIn" linkedinUrl="https://www.linkedin.com/in/olaf-rosendahl/" />
+      <Footer
+        githubTitle="@olros"
+        githubUrl="https://github.com/olros"
+        linkedinTitle="LinkedIn"
+        linkedinUrl="https://www.linkedin.com/in/olaf-rosendahl/"
+      />
     </BrowserRouter>
   </StrictMode>
 );

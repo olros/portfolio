@@ -10,15 +10,11 @@ const App = () => {
   const element = useRoutes([
     {
       path: "/",
-      element: <Home />
+      element: <Home />,
     },
     ...projects.map((project) => ({
       path: `/${project.id}`,
-      element: (
-        <ProjectPage
-          project={project}
-        />
-      )
+      element: <ProjectPage project={project} />,
     })),
   ]);
 
@@ -31,6 +27,6 @@ const App = () => {
       {cloneElement(element, { key: location.pathname })}
     </AnimatePresence>
   );
-}
+};
 
 export default App;

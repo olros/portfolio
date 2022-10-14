@@ -2,7 +2,7 @@ export type Project = {
   id: string;
   when: string;
   title: string;
-  backgroundColor: React.CSSProperties['backgroundColor'];
+  backgroundColor: React.CSSProperties["backgroundColor"];
   description: string;
   github?: string;
   demo?: string;

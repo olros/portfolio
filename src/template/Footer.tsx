@@ -1,4 +1,9 @@
-export function Footer({ githubTitle = "", githubUrl = "", linkedinTitle = "", linkedinUrl = "" }) {
+export function Footer({
+  githubTitle = "",
+  githubUrl = "",
+  linkedinTitle = "",
+  linkedinUrl = "",
+}) {
   return (
     <footer id="sandbox-title">
       <a href={githubUrl} target="_blank" rel="noreferrer">
