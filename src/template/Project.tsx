@@ -56,7 +56,7 @@ export function ProjectPage({ project }: ProjectPageProps) {
       </h1>
       <h3>{project.when}</h3>
       <div style={{ marginTop: "10rem" }}>
-        <Paragraph name="Bilde">
+        <Paragraph name="">
           <img
             src={`/images/${project.id}.jpg`}
             style={{ objectFit: "contain" }}
@@ -64,7 +64,7 @@ export function ProjectPage({ project }: ProjectPageProps) {
           />
         </Paragraph>
         <Paragraph name="Om">
-          <p>{project.description}</p>
+          <p style={{ whiteSpace: 'break-spaces' }}>{project.description}</p>
         </Paragraph>
         {(project.github || project.demo) && (
           <Paragraph name="Linker">
