@@ -186,7 +186,7 @@ section {
 }
 
 section > div {
-  aspect-ratio: 4/3;
+  aspect-ratio: 7/6;
   width: 100%;
   max-width: 70vw;
   position: relative;

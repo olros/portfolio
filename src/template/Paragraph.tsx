@@ -20,7 +20,7 @@ export function Paragraph({ name, children }: Props) {
       >
         {children}
       </div>
-      <motion.h2 style={{ y: "-15vh", color: "var(--orange)" }}>
+      <motion.h2 style={{ y: "-20vh", color: "var(--orange)" }}>
         {name}
       </motion.h2>
     </section>
