@@ -1,0 +1,86 @@
+.App {
+  height: 90vh;
+  max-width: 1200px;
+  margin: 5vh auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-bottom: none;
+  display: flex;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+.tab-button__active {
+  background-color: #333333;
+}
+
+.tab-button__close {
+  padding: 0rem;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: -1rem;
+}
+
+.tab-button__close:hover {
+  background-color: #ffffff22;
+}
+
+.content {
+  flex: 1;
+  border: 1px solid white;
+  border-radius: 0 0 0.5rem 0.5rem;
+  overflow: auto;
+}
+
+.content > div {
+  height: fit-content;
+  overflow: hidden;
+}
+
+.hidden div {
+  overflow-y: auto !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  object-fit: cover;
+  width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+  .App {
+    height: 98vh;
+    margin: 2vh 0 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
