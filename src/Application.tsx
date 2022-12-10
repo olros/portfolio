@@ -157,7 +157,7 @@ export const Terminal = ({ info }: { info: ReactNode }) => {
       return 'Hei til deg og!';
     }
 
-    return `Jeg studerer dessverre ikke AI og har heller ikke laget en Chat-bot á la ChatGPT, skriv "hjelp" for å se hva som er mulig.`;
+    return `Jeg har dessverre ikke laget en Chat-bot à la ChatGPT, skriv "hjelp" for å se hva som er mulig.`;
   };
   return (
     <TerminalContextProvider>
