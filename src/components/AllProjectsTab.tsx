@@ -1,13 +1,14 @@
 import { TypeAnimation } from 'react-type-animation';
 
-import { TabItem } from '../Application';
+import { useAddTab } from '../ApplicationContext';
 import { Project, projects } from '../data';
 import { ProjectTab } from './ProjectTab';
 import { Terminal } from './Terminal';
 
-const ProjectListItem = ({ project, index, onClick }: { onClick: () => void; project: Project; index: number }) => {
+const ProjectListItem = ({ project, index }: { project: Project; index: number }) => {
+  const addTab = useAddTab();
   return (
-    <button onClick={onClick}>
+    <button onClick={() => addTab({ id: project.id, label: project.title, render: <ProjectTab project={project} /> })}>
       <TypeAnimation
         cursor={false}
         repeat={0}
@@ -20,7 +21,7 @@ const ProjectListItem = ({ project, index, onClick }: { onClick: () => void; pro
   );
 };
 
-export const AllProjectsTab = ({ addTab }: { addTab: (tab: TabItem) => void }) => {
+export const AllProjectsTab = () => {
   return (
     <Terminal>
       <a href='https://github.com/olros' rel='noreferrer' target='_blank'>
@@ -33,12 +34,7 @@ export const AllProjectsTab = ({ addTab }: { addTab: (tab: TabItem) => void }) =
       <TypeAnimation cursor={false} repeat={0} sequence={[750, 'Klikk på et prosjekt for å lese mer:']} speed={50} wrapper='span' />
       <br />
       {projects.map((project, i) => (
-        <ProjectListItem
-          index={i}
-          key={project.id}
-          onClick={() => addTab({ id: project.id, label: project.title, render: <ProjectTab project={project} /> })}
-          project={project}
-        />
+        <ProjectListItem index={i} key={project.id} project={project} />
       ))}
     </Terminal>
   );
