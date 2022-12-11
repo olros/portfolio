@@ -1,7 +1,9 @@
 import { ReactNode } from 'react';
 import { ReactTerminal, TerminalContextProvider } from 'react-terminal';
 
-export const Terminal = ({ children }: { children: ReactNode }) => {
+export type TerminalProps = { children: ReactNode };
+
+export const Terminal = ({ children }: TerminalProps) => {
   const defaultCommand = (command: string, commandArguments: string) => {
     const text = `${command} ${commandArguments}`;
     if (text.includes('hjelp')) {

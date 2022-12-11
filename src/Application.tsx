@@ -1,3 +1,4 @@
+import { ReactNode, useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 import './Application.css';
@@ -30,11 +31,23 @@ export const Application = () => {
       </div>
       <div className='content'>
         {tabs.map((tab) => (
-          <div className={tab.id !== visibleTab ? 'hidden' : ''} key={tab.id}>
+          <MountOnFirstRender key={tab.id} render={tab.id === visibleTab}>
             {tab.render}
-          </div>
+          </MountOnFirstRender>
         ))}
       </div>
     </div>
   );
+};
+
+const MountOnFirstRender = ({ children, render }: { children: ReactNode; render: boolean }) => {
+  const [shouldRender, setShouldRender] = useState(render);
+
+  useEffect(() => {
+    if (render) {
+      setShouldRender(true);
+    }
+  }, [render]);
+
+  return <div className={render ? '' : 'hidden'}>{shouldRender ? children : null}</div>;
 };

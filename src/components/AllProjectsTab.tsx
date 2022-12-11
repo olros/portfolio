@@ -1,14 +1,16 @@
 import { TypeAnimation } from 'react-type-animation';
 
 import { useAddTab } from '../ApplicationContext';
-import { Project, projects } from '../data';
+import { Project, projects } from '../projects';
 import { ProjectTab } from './ProjectTab';
 import { Terminal } from './Terminal';
 
-const ProjectListItem = ({ project, index }: { project: Project; index: number }) => {
+type ProjectListItemProps = { project: Project; index: number };
+
+const ProjectListItem = ({ project, index }: ProjectListItemProps) => {
   const addTab = useAddTab();
   return (
-    <button onClick={() => addTab({ id: project.id, label: project.title, render: <ProjectTab project={project} /> })}>
+    <button onClick={() => addTab({ id: `projects-${project.id}`, label: project.title, render: <ProjectTab project={project} /> })}>
       <TypeAnimation
         cursor={false}
         repeat={0}

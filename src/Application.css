@@ -1,6 +1,6 @@
 .App {
   height: 90vh;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 5vh auto;
   overflow: hidden;
   display: flex;
@@ -31,13 +31,14 @@
 
 .tab-button__close {
   padding: 0rem;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   padding: 0;
-  line-height: 35px;
+  line-height: 30px;
   border-radius: 50%;
   text-align: center;
   margin-right: -1rem;
+  font-size: 1.2rem;
 }
 
 .tab-button__close:hover {
@@ -67,11 +68,30 @@
 .information {
   display: flex;
   flex-direction: column;
+  margin: 5px 0;
 }
 
-img {
+.project__img {
   object-fit: cover;
   width: 80%;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  gap: 1rem;
+}
+
+.experience__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.experience__img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 800px) {
