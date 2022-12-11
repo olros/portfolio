@@ -1,5 +1,6 @@
 import codebin from './assets/projects/codebin.jpg';
 import gidd from './assets/projects/gidd.jpg';
+import krigsseilerregisteret from './assets/projects/krigsseilerregisteret.jpg';
 import live from './assets/projects/live.jpg';
 import matplan from './assets/projects/matplan.jpg';
 import monopol from './assets/projects/monopol.jpg';
@@ -132,6 +133,14 @@ Jeg ledet blant annet et migreringprosjekt fra Javascript til Typescript. I till
       'For å lære mer om Firebase, lagde jeg en digital bank for bruk i monopolspill. Brukere kan opprette spill, invitere andre deltagere, gjennomføre transaksjoner og se logger.',
     demo: 'https://monopol.olafros.com',
     github: 'https://github.com/olros/monopoly-bank',
+  },
+  {
+    id: 'krigsseilerregisteret',
+    when: 'April 2019',
+    title: 'Krigsseilerregisteret',
+    image: krigsseilerregisteret,
+    description: 'Utviklet et enkelt kart for Krigsseilerregisteret som viser hvor skipene i deres registre forliste og hva som var årsaken til forliset.',
+    demo: 'https://www.krigsseilerregisteret.no/kart-over-forlis',
   },
   {
     id: 'sanntid',
