@@ -64,7 +64,7 @@
   display: none;
 }
 
-.welcome {
+.information {
   display: flex;
   flex-direction: column;
 }
