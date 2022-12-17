@@ -72,7 +72,6 @@ Jeg ledet blant annet et migreringprosjekt fra Javascript til Typescript. I till
     image: gidd,
     description:
       'Skoleprosjekt i Systemutvikling 2 der gruppen min lagde en frontend-applikasjon i React og backend-applikasjon i Spring Boot (Java). I applikasjonen kan man opprette små arrangementer som andre kan melde seg på, kommunisere med andre deltagere og dele både arrangementer og annet man måtte ønske med følgerne sine i sin egen feed.',
-    demo: 'https://gidd-idatt2106.web.app/',
     github: 'https://github.com/olros/NTNU/tree/main/IDATT2106%20Systemutvikling%202%20med%20smidig%20prosjekt',
   },
   {
