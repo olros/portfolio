@@ -1,5 +1,6 @@
 import codebin from './assets/projects/codebin.jpg';
 import gidd from './assets/projects/gidd.jpg';
+import infoskjerm from './assets/projects/infoskjerm.jpg';
 import krigsseilerregisteret from './assets/projects/krigsseilerregisteret.jpg';
 import live from './assets/projects/live.jpg';
 import matplan from './assets/projects/matplan.jpg';
@@ -24,6 +25,16 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: 'infoskjerm',
+    when: 'Desember 2022',
+    title: 'Infoskjerm',
+    image: infoskjerm,
+    description:
+      "Laget enkel infoskjerm som en for eksempel kan sette opp i gangen sin. Den lar bruker se avganger i sanntid fra sin holdeplass, været nå og neste 90 minutter, samt dagens strømpriser i valgt strømregion.",
+    demo: 'https://infoskjerm.olafros.com/',
+    github: 'https://github.com/olros/infoskjerm',
+  },
   {
     id: 'sanntid-wear',
     when: 'Sommer 2022',
