@@ -6,7 +6,7 @@ import live from './assets/projects/live.jpg';
 import matplan from './assets/projects/matplan.jpg';
 import monopol from './assets/projects/monopol.jpg';
 import ntnui from './assets/projects/ntnui.jpg';
-import pythons_event_registration from './assets/projects/pythons_event_registration.jpg';
+import pythons_event_registration from './assets/projects/pythons_event_registration.png';
 import rombestilling from './assets/projects/rombestilling.jpg';
 import sanntid_wear from './assets/projects/sanntid_wear.jpg';
 import sanntid from './assets/projects/sanntid.jpg';
