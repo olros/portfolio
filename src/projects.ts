@@ -6,11 +6,13 @@ import live from './assets/projects/live.jpg';
 import matplan from './assets/projects/matplan.jpg';
 import monopol from './assets/projects/monopol.jpg';
 import ntnui from './assets/projects/ntnui.jpg';
+import pythons_event_registration from './assets/projects/pythons_event_registration.jpg';
 import rombestilling from './assets/projects/rombestilling.jpg';
 import sanntid_wear from './assets/projects/sanntid_wear.jpg';
 import sanntid from './assets/projects/sanntid.jpg';
 import snakk from './assets/projects/snakk.jpg';
 import stand from './assets/projects/stand.jpg';
+import stats from './assets/projects/stats.png';
 import tihlde from './assets/projects/tihlde.jpg';
 import vgs from './assets/projects/vgs.jpg';
 
@@ -26,6 +28,20 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 'stats',
+    when: 'Januar/Februar 2022',
+    title: 'Stats',
+    image: stats,
+    description:
+      `Stats er et enkelt verktøy for statistikk i applikasjoner som ble laget for å erstatte egen bruk av Google Analytics.. Det gir mulighet til å registrere sidevisninger og egne hendelser. En kan se trender og oversikter over data som kommer inn.
+      
+Verktøyet er organisert med teams som har prosjekter. Dermed kan brukere være medlem av flere teams samtidig. Brukere logger inn med GitHub-kontoen sin.
+
+Stats tilbyr flere forskjellige måter å sende inn analyse-data; gjennom en <script>-tag, en egen NPM-pakke (@olros/stats) eller gjennom HTTP-forespørsler.`,
+    demo: 'https://stats.olafros.com/',
+    github: 'https://github.com/olros/stats',
+  },
+  {
     id: 'infoskjerm',
     when: 'Desember 2022',
     title: 'Infoskjerm',
@@ -34,6 +50,16 @@ export const projects: Project[] = [
       "Laget enkel infoskjerm som en for eksempel kan sette opp i gangen sin. Den lar bruker se avganger i sanntid fra sin holdeplass, været nå og neste 90 minutter, samt dagens strømpriser i valgt strømregion.",
     demo: 'https://infoskjerm.olafros.com/',
     github: 'https://github.com/olros/infoskjerm',
+  },
+  {
+    id: 'pythons_event_registration',
+    when: 'Høst/Vinter 2022',
+    title: 'TIHLDE Pythons event-registrering',
+    image: pythons_event_registration,
+    description:
+      "For å slippe å bruke excel-ark innad i fotballaget utviklet en jeg sammen med @maxschau et eget registreringssystem. Her kan spillerne enkelt melde seg på/av treninger, kamper og sosiale arrangementer. Applikasjonen gir statistikker for blant annet mål, assist og kort, samt oppmøte-statistikk. I tillegg får administratorer en enkel oversikt over hvem som skal motta internbøter på grunn av eventuelle for sene påmeldinger.",
+    demo: 'https://pythons.tihlde.org/',
+    github: 'https://github.com/TIHLDE/pythons_event_registration',
   },
   {
     id: 'sanntid-wear',
