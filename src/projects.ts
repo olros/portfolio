@@ -6,6 +6,7 @@ import live from './assets/projects/live.jpg';
 import matplan from './assets/projects/matplan.jpg';
 import monopol from './assets/projects/monopol.jpg';
 import ntnui from './assets/projects/ntnui.jpg';
+import portfolio from './assets/projects/portfolio.png';
 import pythons_event_registration from './assets/projects/pythons_event_registration.png';
 import rombestilling from './assets/projects/rombestilling.jpg';
 import sanntid_wear from './assets/projects/sanntid_wear.jpg';
@@ -49,6 +50,16 @@ Stats tilbyr flere forskjellige måter å sende inn analyse-data; gjennom en <sc
       'Laget enkel infoskjerm som en for eksempel kan sette opp i gangen sin. Den lar bruker se avganger i sanntid fra sin holdeplass, været nå og neste 90 minutter, samt dagens strømpriser i valgt strømregion.',
     demo: 'https://infoskjerm.olafros.com/',
     github: 'https://github.com/olros/infoskjerm',
+  },
+  {
+    id: 'portfolio',
+    when: 'Høst 2022',
+    title: 'Portfolio',
+    image: portfolio,
+    description:
+      'Laget med et lite ønske om en litt annerledes portfolio, samt for å ha gøy når alternativet er å lese pensum. Relativt enkelt oppsett med bruk av NPM-pakkene react-terminal og react-type-animation for utseende og skrive-animasjoner.',
+    demo: 'https://olafros.com',
+    github: 'https://github.com/olros/portfolio',
   },
   {
     id: 'pythons_event_registration',

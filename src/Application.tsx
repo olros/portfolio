@@ -26,9 +26,9 @@ export const Application = () => {
   };
 
   return (
-    <div className='App'>
-      <TypeAnimation cursor={false} repeat={0} sequence={['Olaf Rosendahl']} speed={10} wrapper='h1' />
-      <div className='tab-buttons'>
+    <main className='main'>
+      <TypeAnimation cursor={false} repeat={Infinity} sequence={['Olaf Rosendahl', 30_000, 'Olaf', 15_000]} speed={20} wrapper='h1' />
+      <nav className='tab-buttons'>
         {tabs.map((tab) => (
           <button className={['tab-button', tab.id === visibleTab ? 'tab-button__active' : ''].join(' ')} key={tab.id} onClick={() => clickTab(tab)}>
             {tab.label}
@@ -39,15 +39,15 @@ export const Application = () => {
             )}
           </button>
         ))}
-      </div>
-      <div className='content'>
+      </nav>
+      <section className='content'>
         {tabs.map((tab) => (
           <MountOnFirstRender key={tab.id} render={tab.id === visibleTab}>
             {tab.render}
           </MountOnFirstRender>
         ))}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

@@ -1,4 +1,6 @@
-import { cloneElement, ReactElement, useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
+
+import { FadeIn } from './FadeIn';
 
 export type DelayedRenderProps = { children: ReactElement; delay: number; style?: React.CSSProperties };
 
@@ -10,5 +12,9 @@ export const DelayedRender = ({ children, delay, style = {} }: DelayedRenderProp
       clearTimeout(timeout);
     };
   }, [delay]);
-  return cloneElement(children, { style: { ...style, transition: 'opacity 0.75s', opacity: showImg ? 1 : 0 } });
+  return (
+    <FadeIn style={style} visible={showImg}>
+      {children}
+    </FadeIn>
+  );
 };
