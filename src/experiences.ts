@@ -1,4 +1,5 @@
 import blank from './assets/experience/blank.jpg';
+import capra from './assets/experience/capra.png';
 import ec_play from './assets/experience/ec_play.jpg';
 import kantega from './assets/experience/kantega.jpg';
 import knowit from './assets/experience/knowit.jpg';
@@ -21,6 +22,14 @@ export const experiences: Experience[] = [
     when: 'August 2022 - Nå',
     image: kantega,
     type: 'Deltid',
+  },
+  {
+    id: 'capra',
+    link: 'https://capraconsulting.no/',
+    company: 'Capra',
+    when: 'Sommer 2023',
+    image: capra,
+    type: 'Sommerjobb',
   },
   {
     id: 'blank',

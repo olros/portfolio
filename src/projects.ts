@@ -13,7 +13,7 @@ import sanntid_wear from './assets/projects/sanntid_wear.jpg';
 import sanntid from './assets/projects/sanntid.jpg';
 import snakk from './assets/projects/snakk.jpg';
 import stand from './assets/projects/stand.jpg';
-import stats from './assets/projects/stats.jpg';
+import stats from './assets/projects/stats.png';
 import tihlde from './assets/projects/tihlde.jpg';
 import vgs from './assets/projects/vgs.jpg';
 
