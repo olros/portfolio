@@ -2310,10 +2310,10 @@ react-refresh@^0.14.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
 
-react-terminal@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/react-terminal/-/react-terminal-1.3.1.tgz#7feaaf732b956b806edc1c7c07600983309e4ddc"
-  integrity sha512-lbkrih1be0nlJptZR7uwV6YF8PMuxKJOKhGN+GVuFKp9dY/qpSYF76KMGZZJnWbbxAt5Bkf+aUt4iyy5F8NBdQ==
+react-terminal@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/react-terminal/-/react-terminal-1.4.4.tgz#ac9dcd231f2cb909df5f10f1a34eb6c0dc1eb011"
+  integrity sha512-ro3jofMYh0579oJQbx4FeJ52aU7vzNazHOBPjP7WpOCn6dnQLzB4e3UOA1KZxZzV7LQl7Bn+lovC5LmJo7pa0g==
   dependencies:
     prop-types "^15.7.2"
     react-device-detect "2.1.2"
