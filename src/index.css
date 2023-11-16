@@ -1,5 +1,6 @@
 :root {
-  font-family: 'Source Code Pro', monospace, Inter, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: 'Source Code Pro', monospace, Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -16,12 +17,12 @@
 }
 
 * {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  font-family: var(--font-family);
   scrollbar-width: none; /* Firefox */
 }
 
 *::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
 }
 
 a {
