@@ -2,8 +2,8 @@ import { ReactNode, useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 import './Application.css';
+import { stats } from '../stats';
 import { TabItem, useRemoveTab, useTabs, useVisibleTab } from './ApplicationContext';
-import { stats } from './stats';
 
 export const Application = () => {
   const tabs = useTabs();

@@ -1,8 +1,8 @@
 import { TypeAnimation } from 'react-type-animation';
 
+import { stats } from '../../stats';
 import { useAddTab } from '../ApplicationContext';
 import { Project, projects } from '../projects';
-import { stats } from '../stats';
 import { ProjectTab } from './ProjectTab';
 import { Terminal } from './Terminal';
 
