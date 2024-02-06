@@ -11,15 +11,15 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <p>We value your privacy. Sanntid is committed to protecting your personal information. Here&apos;s what you need to know:</p>
     <ul>
       <li>
-        <b>Data Storage</b>: Ruter does not collect or store any of your personal data, journey history, or location information. However, it&apos;s important
+        <b>Data Storage</b>: Sanntid does not collect or store any of your personal data, journey history, or location information. However, it&apos;s important
         to note that we use the Entur API to provide you with accurate and up-to-date information.
       </li>
       <li>
         <b>Location Services</b>: Location services are optional. If you choose to enable location services, your location data will not be shared or stored by
-        Retur.
+        Sanntid.
       </li>
       <li>
-        <b>Third-Party Services</b>: We use the Entur API to access public transportation data. Please review Entur&apos;s privacy policy for information about
+        <b>Third-Party Services</b>: The Entur API is used to access public transportation data. Please review Entur&apos;s privacy policy for information about
         how they handle your data.
       </li>
     </ul>
