@@ -14,6 +14,7 @@ updates:
           - "eslint*"
           - "prettier"
           - "@types/eslint"
+          - "@typescript-eslint/*"
       react:
         patterns:
           - "react"
