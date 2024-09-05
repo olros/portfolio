@@ -16,10 +16,18 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    id: 'blank-heltid',
+    link: 'https://blank.no',
+    company: 'Blank',
+    when: 'August 2024 - Nå',
+    image: blank,
+    type: 'Heltid',
+  },
+  {
     id: 'kantega',
     link: 'https://kantega.no',
     company: 'Kantega',
-    when: 'August 2022 - Nå',
+    when: 'August 2022 - Juni 2024',
     image: kantega,
     type: 'Deltid',
   },
@@ -32,7 +40,7 @@ export const experiences: Experience[] = [
     type: 'Sommerjobb',
   },
   {
-    id: 'blank',
+    id: 'blank-deltid',
     link: 'https://blank.no',
     company: 'Blank',
     when: 'Sommer 2022',
