@@ -30,7 +30,7 @@ export type Project = {
 export const projects: Readonly<Project[]> = [
   {
     id: 'stats',
-    when: 'Januar 2023',
+    when: 'Januar 2023 -',
     title: 'Stats',
     image: stats,
     description: `Stats er et enkelt verktøy for statistikk i applikasjoner som ble laget for å erstatte egen bruk av Google Analytics. Det gir mulighet til å registrere antall sidevisninger, unike brukere og egne hendelser. En kan se trender og oversikter over data som kommer inn.
@@ -63,7 +63,7 @@ Stats tilbyr flere forskjellige måter å sende inn analyse-data; gjennom en <sc
   },
   {
     id: 'pythons_event_registration',
-    when: 'Høst 2022 -',
+    when: 'Høst 2022 - Vår 2024',
     title: 'TIHLDE Pythons event-registrering',
     image: pythons_event_registration,
     description:
