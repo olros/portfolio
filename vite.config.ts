@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: './index.html',
         sanntid: './personvern/sanntid.html',
+        personvern: './personvern.html',
         '404': './404.html',
       },
     },
