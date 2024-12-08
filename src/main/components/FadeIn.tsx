@@ -1,7 +1,7 @@
 import { cloneElement, ReactElement } from 'react';
 
 export type FadeInProps = {
-  children: ReactElement;
+  children: ReactElement<any>;
   visible: boolean;
   style?: React.CSSProperties;
 };
