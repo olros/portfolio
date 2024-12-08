@@ -1,7 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 
 import { stats } from '../../stats';
-import { useAddTab } from '../ApplicationContext';
+import { TabRenderProps, useAddTab } from '../ApplicationContext';
 import { Project, projects } from '../projects';
 import { ProjectTab } from './ProjectTab';
 import { Terminal } from './Terminal';
@@ -11,7 +11,7 @@ type ProjectListItemProps = { project: Project; index: number };
 const ProjectListItem = ({ project, index }: ProjectListItemProps) => {
   const addTab = useAddTab();
   const onClick = () => {
-    addTab({ id: `projects-${project.id}`, label: project.title, render: <ProjectTab project={project} /> });
+    addTab({ id: `projects-${project.id}`, label: project.title, render: (props) => <ProjectTab {...props} project={project} /> });
     stats.event(`Open project: ${project.title}`);
   };
 
@@ -28,7 +28,7 @@ const ProjectListItem = ({ project, index }: ProjectListItemProps) => {
   );
 };
 
-export const AllProjectsTab = () => {
+export const AllProjectsTab = (_: TabRenderProps) => {
   return (
     <Terminal>
       <a href='https://github.com/olros' rel='noreferrer' target='_blank'>

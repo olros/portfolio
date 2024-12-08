@@ -15,9 +15,6 @@ importers:
       '@olros/stats':
         specifier: ^2.2.1
         version: 2.2.1
-      constate:
-        specifier: ^3.3.2
-        version: 3.3.2(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -666,11 +663,6 @@ packages:
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
-
-  constate@3.3.2:
-    resolution: {integrity: sha512-ZnEWiwU6QUTil41D5EGpA7pbqAPGvnR9kBjko8DzVIxpC60mdNKrP568tT5WLJPAxAOtJqJw60+h79ot/Uz1+Q==}
-    peerDependencies:
-      react: ^19.0.0
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -2170,10 +2162,6 @@ snapshots:
   color-name@1.1.4: {}
 
   concat-map@0.0.1: {}
-
-  constate@3.3.2(react@19.0.0):
-    dependencies:
-      react: 19.0.0
 
   convert-source-map@2.0.0: {}
 

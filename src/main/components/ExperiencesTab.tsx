@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
+import { TabRenderProps } from '../ApplicationContext';
 import { Experience, experiences } from '../experiences';
 import { DelayedRender } from './DelayedRender';
 import { FadeIn } from './FadeIn';
@@ -38,7 +39,7 @@ const ExperienceItem = ({ experience, index }: ExperienceItemProps) => {
   );
 };
 
-export const ExperiencesTab = () => (
+export const ExperiencesTab = (_: TabRenderProps) => (
   <Terminal>
     {experiences.map((experience, i) => (
       <ExperienceItem experience={experience} index={i} key={experience.id} />

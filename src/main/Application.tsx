@@ -7,7 +7,7 @@ import { TabItem, useRemoveTab, useTabs, useVisibleTab } from './ApplicationCont
 
 export const Application = () => {
   const tabs = useTabs();
-  const [visibleTab, setVisibleTab] = useVisibleTab();
+  const { visibleTab, setVisibleTab } = useVisibleTab();
   const removeTab = useRemoveTab();
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export const Application = () => {
       <section className='content'>
         {tabs.map((tab) => (
           <MountOnFirstRender key={tab.id} render={tab.id === visibleTab}>
-            {tab.render}
+            {tab.render({ active: tab.id === visibleTab })}
           </MountOnFirstRender>
         ))}
       </section>

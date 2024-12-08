@@ -1,16 +1,18 @@
 import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
+import { TabRenderProps } from '../ApplicationContext';
 import { Project } from '../projects';
 import { FadeIn } from './FadeIn';
 import { Terminal } from './Terminal';
 
-export type ProjectTabProps = { project: Project };
+export type ProjectTabProps = { project: Project } & TabRenderProps;
 
-export const ProjectTab = ({ project }: ProjectTabProps) => {
+export const ProjectTab = ({ project, active }: ProjectTabProps) => {
   const [displayImage, setDisplayImage] = useState(false);
   return (
     <Terminal>
+      {active && <title>{`Prosjekt - ${project.title}`}</title>}
       <TypeAnimation cursor={false} repeat={0} sequence={[project.title]} speed={60} style={{ fontSize: '2rem' }} />
       <TypeAnimation cursor={false} repeat={0} sequence={[500, `(${project.when})`]} speed={60} style={{ marginTop: '0.5rem' }} />
       <br />
