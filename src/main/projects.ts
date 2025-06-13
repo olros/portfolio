@@ -37,7 +37,8 @@ export const projects: Readonly<Project[]> = [
     description: `Vibe-kodet en boliglånskalkulator med Cursor som også lar deg se hvordan fremtidige renteendringer vil påvirke lånet ditt.
 Ved å legge inn lånebeløp, rente og nedbetalingstid kan du se hvor mye du må betale hver måned. Du kan også se hvor mye du betaler i renter og avdrag i løpet av hele lånetiden.
 Du kan også se hvor mye du sparer på å betale like mye som du allerede gjør, selv om renten går ned.
-I tillegg kan du legge inn ekstra innbetalinger på spesifikke datoer for å se hvordan det påvirker lånet ditt.`,
+I tillegg kan du legge inn ekstra innbetalinger på spesifikke datoer for å se hvordan det påvirker lånet ditt.
+Neppe den beste koden eller den peneste boliglånskalkulatoren som finnes, men gøy å se hva man kan lage på et par timer med Cursor ✨`,
     demo: 'https://boliglanskalkulator.olafros.com/',
     github: 'https://github.com/olros/boliglanskalkulator',
   },
