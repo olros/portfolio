@@ -2,6 +2,7 @@ import { ReactElement, useEffect, useState } from 'react';
 
 import { FadeIn } from './FadeIn';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type DelayedRenderProps = { children: ReactElement<any>; delay: number; style?: React.CSSProperties };
 
 export const DelayedRender = ({ children, delay, style = {} }: DelayedRenderProps) => {

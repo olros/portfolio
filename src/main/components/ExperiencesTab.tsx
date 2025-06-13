@@ -39,6 +39,7 @@ const ExperienceItem = ({ experience, index }: ExperienceItemProps) => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const ExperiencesTab = (_: TabRenderProps) => (
   <Terminal>
     {experiences.map((experience, i) => (

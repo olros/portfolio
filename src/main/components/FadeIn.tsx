@@ -1,6 +1,7 @@
 import { cloneElement, ReactElement } from 'react';
 
 export type FadeInProps = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   children: ReactElement<any>;
   visible: boolean;
   style?: React.CSSProperties;

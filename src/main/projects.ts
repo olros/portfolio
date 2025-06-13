@@ -1,3 +1,4 @@
+import boliglanskalkulator from './assets/projects/boliglanskalkulator.png';
 import codebin from './assets/projects/codebin.jpg';
 import gidd from './assets/projects/gidd.jpg';
 import infoskjerm from './assets/projects/infoskjerm.jpg';
@@ -29,8 +30,20 @@ export type Project = {
 
 export const projects: Readonly<Project[]> = [
   {
+    id: 'boliglanskalkulator',
+    when: 'Juni 2025',
+    title: 'Boliglånskalkulator',
+    image: boliglanskalkulator,
+    description: `Vibe-kodet en boliglånskalkulator med Cursor som også lar deg se hvordan fremtidige renteendringer vil påvirke lånet ditt.
+Ved å legge inn lånebeløp, rente og nedbetalingstid kan du se hvor mye du må betale hver måned. Du kan også se hvor mye du betaler i renter og avdrag i løpet av hele lånetiden.
+Du kan også se hvor mye du sparer på å betale like mye som du allerede gjør, selv om renten går ned.
+I tillegg kan du legge inn ekstra innbetalinger på spesifikke datoer for å se hvordan det påvirker lånet ditt.`,
+    demo: 'https://boliglanskalkulator.olafros.com/',
+    github: 'https://github.com/olros/boliglanskalkulator',
+  },
+  {
     id: 'stats',
-    when: 'Januar 2023 -',
+    when: 'Januar 2023 - Januar 2025',
     title: 'Stats',
     image: stats,
     description: `Stats er et enkelt verktøy for statistikk i applikasjoner som ble laget for å erstatte egen bruk av Google Analytics. Det gir mulighet til å registrere antall sidevisninger, unike brukere og egne hendelser. En kan se trender og oversikter over data som kommer inn.

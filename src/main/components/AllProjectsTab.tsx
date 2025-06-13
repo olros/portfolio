@@ -28,6 +28,7 @@ const ProjectListItem = ({ project, index }: ProjectListItemProps) => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const AllProjectsTab = (_: TabRenderProps) => {
   return (
     <Terminal>
