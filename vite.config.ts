@@ -9,6 +9,7 @@ export default defineConfig({
         main: './index.html',
         sanntid: './personvern/sanntid.html',
         personvern: './personvern.html',
+        'nynorsk-oversetter': './personvern/nynorsk-oversetter.html',
         '404': './404.html',
       },
     },
